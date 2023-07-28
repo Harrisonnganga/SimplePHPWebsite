@@ -1,6 +1,3 @@
-<?php
-
-?>
 <?php include "banner/head.php"; ?>
 <?php include "banner/header.php"; ?>
 

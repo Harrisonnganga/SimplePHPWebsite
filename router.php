@@ -8,13 +8,13 @@ switch ($request) {
     case "";
 
 
-        require __DIR__ . "/views/home.php";
+        require __DIR__ . "/template/home.php";
         break;
 
 
 
     default:
-        $filename = __DIR__ . "/views" . $request . ".php";
+        $filename = __DIR__ . "/template" . $request . ".php";
         if (file_exists($filename)) {
             require $filename;
             break;

@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <?php include "banner/head.php"; ?>
 <?php include "banner/header.php"; ?>
 
@@ -39,7 +35,6 @@
         <li>Certificate in personal branding @open University 2023</li>
     </ul>
     <hr>
-
     <footer>
         <?php include "banner/footer.php"; ?>
     </footer>
