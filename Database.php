@@ -1,4 +1,6 @@
 <?php
 $user = 'root';
 $password = '*manasseh*';
-$db = 
+$db = 'myapp';
+
+$db = new mysqli ('localhost', $user, $password, $db);
