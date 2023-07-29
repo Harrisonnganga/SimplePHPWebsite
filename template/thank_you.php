@@ -1,5 +1,1 @@
-<?php
-include "views/thank_you.view.php";
-?>
-
-
+<?php require "thank_you.view.php"; ?>

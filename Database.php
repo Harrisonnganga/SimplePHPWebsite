@@ -1,6 +1,16 @@
 <?php
-$user = 'root';
-$password = '*manasseh*';
-$db = 'myapp';
+$host = "localhost";
+$dbname = "simpleweb";
+$username = "root";
+$password = "*manasseh*";
 
-$db = new mysqli ('localhost', $user, $password, $db) or die('could not  connect at the moment');
+try {
+    $dsn = "mysql:host=$host;dbname=$dbname";
+    $db = new PDO($dsn, $username, $password);
+
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo 'Connection failed: ' . $e->getMessage();
+}
+?>

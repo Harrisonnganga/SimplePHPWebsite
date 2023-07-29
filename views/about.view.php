@@ -1,5 +1,5 @@
-<?php include "banner/head.php"; ?>
-<?php include "banner/header.php"; ?>
+<?php include "partials/head.php"; ?>
+<?php include "partials/header.php"; ?>
 
 <body>
     <h1>About me</h1>
@@ -36,5 +36,5 @@
     </ul>
     <hr>
     <footer>
-        <?php include "banner/footer.php"; ?>
+        <?php include "partials/footer.php"; ?>
     </footer>
