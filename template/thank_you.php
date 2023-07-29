@@ -1,1 +1,0 @@
-<?php require "thank_you.view.php"; ?>

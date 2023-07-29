@@ -1,40 +1,27 @@
-<?php
-
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <title>Register Page</title>
 </head>
-<header>
-    <?php require "partials/header.php" ?>
-</header>
 
 <body>
-    
+    <header>
+        <?php require "partials/header.php"; ?>
+    </header>
 
-        <?php
-        echo "<h1>Register</h1>";
-        echo "<hr>";
-        echo "<p>Have an account?</p>";
-        ?>
-        <?php ?>
+    <h1>Register</h1>
+    <hr>
+    <p>Have an account?</p>
 
-        <form action="register.php" method="get">
-            Name: <input type="text" name="name">
-            <input type="submit">
-        </form>
-        
+    <form action="register.php" method="post">
+        Name: <input type="text" name="name" placeholder="name"><br>
+        Email: <input type="email" name="email" placeholder="email"><br>
+        Password: <input type="password" name="password" placeholder="Password"><br>
+        <input type="submit">
+    </form>
 
-
-
-
+    <?php include "partials/footer.php"; ?>
 </body>
 
 </html>
+

@@ -1,4 +1,4 @@
-<!-- <?php
+ <?php
 
 session_start(); 
 
@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 
   if ($username == 'brad' && $password == 'password') {
     $_SESSION['username'] = $username;
-    header('Location: /simple/extras/dashboard.php');
+    header('Location: /simplephpwebsite/extras/dashboard.php');
   } else {
     echo 'Incorrect username or password';
   }

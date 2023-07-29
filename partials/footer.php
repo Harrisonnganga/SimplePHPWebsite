@@ -1,15 +1,16 @@
 </body>
 <footer>
+<div class="footer-content">
   <p>&copy; <?php echo date('Y'); ?> SimplePHPWebsite. All rights reserved.</p>
   <nav>
     <ul>
-      <?php
-      $headerItems = ['Home', 'About', 'Contact',  'Thanks'];
-      foreach ($headerItems as $headerItem) {
-        echo '<li><a href="' . strtolower($headerItem) . '.php">' . $headerItem . '</a></li>';
-      }
-      ?>
+    
+    <li><a href="">Home</a><br> </li>
+    <li><a href="/about">About</a><br></li>
+    <li><a href="/contact">Contact</a><br></li>
+   
     </ul>
-  </nav>
+</nav>
+</div>
 </footer>
 </html>

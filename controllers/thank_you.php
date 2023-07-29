@@ -1,6 +1,5 @@
 <?php include "partials/head.php"; ?>
 <?php include "partials/header.php"; ?>
-<?php include "template/contact.php"; ?>
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -24,11 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   ?>
 
 <body>
-    <a href="template/contact">Contact us again</a>
-    
+<?php include "controllers/contact.php"; ?>
     <hr>
-    
-    <p>Welcome again</p>
+    <h1>Thank You</h1>
+    <p>Thank you for contacting us we will get back to you soon, Welcome again</p>
     <footer>
     <?php include "partials/footer.php"; ?>
     </footer>
