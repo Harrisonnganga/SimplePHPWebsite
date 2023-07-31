@@ -12,7 +12,8 @@
     <body>
         <div class="container">
             <h1>Contact Us</h1>
-            <form action="thank_you.php" method="POST"><br>
+            <hr>
+            <form action="thank_you" method="POST"><br>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br>
 

@@ -20,7 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 <hr>
-<p>Thank you for contacting us we will get back to you soon, Welcome again</p>
+<p>Thank you for contacting us we will get back to you soon.</p>
+<p>Welcome again.</p><br>
+<a href="/">back to Home</a>
 
 
 <hr>

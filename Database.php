@@ -1,9 +1,8 @@
 <?php
 $host = "localhost";
-$dbname = " contact_form_submissions";
+$dbname = "homestead";
 $username = "root";
 $password = "*manasseh*";
-
 $conn = new mysqli($host, $username, $password, $dbname);
 
 if ($conn->connect_error) {
