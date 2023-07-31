@@ -12,7 +12,7 @@
     <body>
         <div class="container">
             <h1>Contact Us</h1>
-            <form action="thank_you.php" method="POST"></form><br>
+            <form action="thank_you.php" method="POST"><br>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br>
 
@@ -25,6 +25,7 @@
             <button type="submit">Submit</button><br>
             </form>
         </div>
+        
         
         <?php include "partials/footer.php"; ?>
 

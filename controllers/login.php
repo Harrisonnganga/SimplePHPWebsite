@@ -5,7 +5,7 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
  
-		$query = mysqli_query($conn, "SELECT * FROM `login` WHERE `username`='$username' && `password`='$password'");
+		$query = mysqli_query($conn, "SELECT * FROM 'login' WHERE 'username'='$username' && 'password'='$password'");
 		$fetch=mysqli_fetch_array($query);
 		$count=mysqli_num_rows($query);
  
@@ -16,4 +16,6 @@
 			echo "<div class='alert alert-danger'>Invalid username or password</div>";
 		}
 	}
+	
+	include "views/login.view.php";
 ?>

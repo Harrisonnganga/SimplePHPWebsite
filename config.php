@@ -4,7 +4,7 @@ return [
   'database' => [
       'host' => 'localhost',
       'port' => 3306,
-      'dbname' => 'simpleweb',
+      'dbname' => ' contact_form_submissions',
       'charset' => 'utf8mb4'
   ],
 

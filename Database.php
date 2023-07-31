@@ -1,16 +1,12 @@
 <?php
 $host = "localhost";
-$dbname = "simpleweb";
+$dbname = " contact_form_submissions";
 $username = "root";
 $password = "*manasseh*";
 
-try {
-    $dsn = "mysql:host=$host;dbname=$dbname";
-    $db = new PDO($dsn, $username, $password);
+$conn = new mysqli($host, $username, $password, $dbname);
 
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
+if ($conn->connect_error) {
+  die("Connection error: " . $conn->connect_error);
 }
 ?>
