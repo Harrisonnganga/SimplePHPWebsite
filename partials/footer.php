@@ -1,6 +1,6 @@
 </body>
 <footer>
-<div class="footer-content">
+<div>
   <p>&copy; <?php echo date('Y'); ?> SimplePHPWebsite. All rights reserved.</p>
   <nav>
     <ul>
@@ -13,4 +13,5 @@
 </nav>
 </div>
 </footer>
+</body>
 </html>

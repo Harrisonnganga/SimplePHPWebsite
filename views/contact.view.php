@@ -10,7 +10,6 @@
     </head>
 
     <body>
-        <div class="container">
             <h1>Contact Us</h1>
             <hr>
             <form action="thank_you" method="POST"><br>
@@ -25,7 +24,6 @@
 
             <button type="submit">Submit</button><br>
             </form>
-        </div>
         
         
         <?php include "partials/footer.php"; ?>

@@ -1,7 +1,6 @@
-<?php
-include "partials/head.php"; 
-include "partials/header.php";
-?>
+<?php include "partials/head.php"; ?>
+<?php include "partials/header.php"; ?>
+<?php include "Database.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,17 +9,12 @@ include "partials/header.php";
 <body>
     <h2>Login</h2>
     <hr>
-    <form action="login.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" required><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <input type="submit" value="Login">
+    <form action="login" method="POST"><br>
+        Username: <input type="text" name="username" placeholder="name"><br><br>
+        Email: <input type="email" name="email" placeholder="email"><br><br>
+        Password: <input type="password" name="password" placeholder="Password"><br>
+        <input type="submit">
     </form>
+
 </body>
 </html>
